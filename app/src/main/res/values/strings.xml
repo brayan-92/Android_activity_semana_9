@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Activity Semana 9</string>
+    <string name="welcome_message">¡Bienvenido a la Actividad Semana 9!</string>
+    <string name="button_text">Presiona Aquí</string>
+</resources>
