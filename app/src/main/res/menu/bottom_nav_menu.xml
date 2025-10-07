@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/nav_home"
         android:icon="@android:drawable/ic_menu_view"
-        android:title="Home"
-    />
+        android:title="Home" />
+
     <item
         android:id="@+id/nav_about"
         android:icon="@android:drawable/ic_menu_view"
-        android:title="About"
-        />
+        android:title="About" />
+
     <item
-    android:id="@+id/nav_services"
-    android:icon="@android:drawable/ic_menu_view"
-    android:title="Services"
-    />
+        android:id="@+id/nav_services"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Services" />
+
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Contact" />
+
 </menu>

@@ -14,16 +14,29 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Fragmento inicial
         replaceFragment(HomeFragment())
 
-        binding.bottomNavigation.setOnItemSelectedListener {
-            when (it.itemId) {
-                R.id.nav_home -> replaceFragment(HomeFragment())
-                R.id.nav_about -> replaceFragment(AboutFragment())
-                R.id.nav_services -> replaceFragment(ServicesFragment())
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    replaceFragment(HomeFragment())
+                    true
+                }
+                R.id.nav_about -> {
+                    replaceFragment(AboutFragment())
+                    true
+                }
+                R.id.nav_services -> {
+                    replaceFragment(ServicesFragment())
+                    true
+                }
+                R.id.nav_contact -> {
+                    replaceFragment(ContactsFragment())
+                    true
+                }
                 else -> false
             }
-            true
         }
     }
 
